@@ -1,6 +1,6 @@
 <?php
 
-require_once 'src/Conta.php';
+require_once(__DIR__ . '/Conta.php');
 
 $primeiraConta = new Conta();
 $primeiraConta->deposita(500);
