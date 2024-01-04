@@ -70,7 +70,7 @@ class Conta
         }
     }
 
-    pubblic static function recuperaNumeroDeContas(): int
+    public static function recuperaNumeroDeContas(): int
     {
         return self::$numeroDeContas;
     }
