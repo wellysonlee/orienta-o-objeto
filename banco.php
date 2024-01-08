@@ -4,6 +4,7 @@ require_once 'src/Conta.php';
 require_once 'src/Endereco.php';
 require_once 'src/Titular.php';
 require_once 'src/CPF.php';
+require_once 'src/Pessoa.php';
 
 $endereco = new Endereco('Petrópolis', 'um bairro', 'minha rua', '71B');
 $wellyson = new Titular(new CPF('123.456.789-10'), 'Wellyson Martins', $endereco);
