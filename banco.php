@@ -21,7 +21,7 @@ $sara = new Titular(new CPF('698.549.548-10'), 'sara', $endereco);
 $segundaConta = new Conta($sara);
 var_dump($segundaConta);
 
-$outroEndereco = new Endereco('A', 'b', 'c', '1D');
+/*$outroEndereco = new Endereco('A', 'b', 'c', '1D');
 $outra = new Conta(new Titular(new CPF('123.654.789-01'), 'Abcdefg', $outroEndereco));
 unset($segundaConta);
 echo Conta::recuperaNumeroDeContas();
