@@ -1,17 +1,13 @@
 <?php
 
-use Well\Banco\Modelo\Conta\ContaPoupanca;
-use Well\Banco\Modelo\Conta\ContaCorrente;
-use Well\Banco\Modelo\Conta\Titular;
-use Well\Banco\Modelo\CPF;
-use Well\Banco\Modelo\Endereco;
-
+use Well\Banco\Modelo\Conta\{ContaPoupanca, ContaCorrente, Titular};
+use Well\Banco\Modelo\{CPF, Endereco};
 require_once 'autoload.php';
 
-$conta = new ContaPoupanca(
+$conta = new ContaCorrente(
     new Titular(
         new CPF('123.456.789-10'),
-        'Vinicius Dias',
+        'Wellyson Martins',
         new Endereco('Petrópolis', 'bairro Teste', 'Rua lá', '37')
     )
 );
