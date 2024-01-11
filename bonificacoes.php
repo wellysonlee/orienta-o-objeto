@@ -5,7 +5,7 @@ require_once 'autoload.php';
 
 use Well\Banco\Service\ControladorDeBonificacoes;
 use Well\Banco\Modelo\{CPF};
-use Well\Banco\Modelo\Funcionario\{Funcionario, Gerente, Diretor, Desenvolvedor};
+use Well\Banco\Modelo\Funcionario\{Gerente, Diretor, Desenvolvedor};
 
 $umFuncionario = new Desenvolvedor(
     'Wellyson Martins',
@@ -13,6 +13,8 @@ $umFuncionario = new Desenvolvedor(
     'Desenvolvedor',
     1000
 );
+
+$umFuncionario->sobeDeNivel();
 
 $umaFuncionaria = new Gerente(
     'Lara Lopes',
