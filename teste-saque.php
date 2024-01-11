@@ -11,7 +11,7 @@ $conta = new ContaCorrente(
         new Endereco('Petrópolis', 'bairro Teste', 'Rua lá', '37')
     )
 );
-$conta->deposita(500);
-$conta->saca(100);
+$conta->deposita(10000);
+$conta->saca(600);
 
 echo $conta->recuperaSaldo();
